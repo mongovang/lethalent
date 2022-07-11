@@ -1,0 +1,192 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Splash', cursive;
+  /*background: url(b18c.jpg) no-repeat center center fixed;*/
+  background:  
+          linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ),
+        url(b18c.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 4rem;
+  color: #e2dbdb;
+  margin-top: 330px;
+  margin-left: 0x auto;
+  /*animation-name: h1;
+  animation: h1 3s linear infinite;*/
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+        padding: 0;
+    }
+}
+
+/*@keyframes h1 {
+  0%  {color: lightblue;}
+  25% {color: royalblue;}
+  50% {color: black;}
+  75% {color: deepskyblue;}
+  100%  {color: blue;}
+}*/
+
+h3 {
+  width: 1000px;
+  font-size: 25px;
+  /*margin-left: 0px;*/
+  color: dodgerblue;
+}
+
+@media only screen and (max-width: 600px) {
+    h3 {
+        font-size: 1em;
+        padding: 0;
+    }
+}
+
+
+.car {
+  width: 100px;
+  height: 100px
+  color: red;
+  font-size: 50px;
+  margin-top: 0px;
+  margin-left: auto 0;
+  /*transform: scaleX(-1)*/;
+  position: relative;
+  animation-name: car;
+  animation: car 5s linear infinite;
+}
+
+@keyframes car {
+  from {left: 100px;}
+  to {left: 600px;}
+  0% {color: transparent;}
+  25% {color: red;}
+  50% {color: white;}
+  75% {color: blue;}
+  100% {color: transparent;}
+}
+
+@media only screen and (max-width: 600px) {
+    .car {
+        font-size: 2em;
+        padding: 0;
+    }
+    @keyframes  car {
+      from {left: 0px;}
+      to {left: 260px;}
+      0% {color: transparent;}
+      25% {color: red;}
+      50% {color: white;}
+      75% {color: blue;}
+      100% {color: transparent;}
+    }
+}
+
+.civic {
+  color: whitesmoke;
+  font-family: 'Bangers', cursive;
+  color: red;
+  font-size: 3em;
+  display:  flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap:  wrap;
+  justify-content: center;
+}
+
+img {
+  width: 400px;
+  height: 340px;
+  margin: 10px;
+  transition: all 0.5s ease;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+hr {
+  margin: 20px auto;
+  color: red;
+  border: 3px solid red;
+  max-width: 70px;
+  opacity: 1;
+}
+
+.buffer {
+  height: 1rem;
+}
+
+.buffer2 {
+  height: 10rem;
+}
+
+button {
+  font-weight: 700;
+  border-radius: 300px;
+  text-transform: uppercase;
+}
+
+button {
+  background-color: green;
+  border-color: white;
+  transition: all 1s ease;
+}
+
+button:hover {
+  background-color: red;
+  border-color: white;
+  border-width: 4px;
+  font-weight: bold;
+  font-size: large;
+  color: red;
+  transform: scale(1.0);
+}
+
+button:focus {
+  outline-color: transparent;
+  outline-style: solid;
+  box-shadow: 0 0 0 5px red;
+  transition: 600ms;
+}
+
+button:active {
+  opacity: 0%;
+}
+
+button:after {
+  content: 'Lets Go!';
+  left: 20px;
+  position: absolute;
+  opacity: 0%;
+}
+
+button:hover:after {
+  content: 'Lets Go!';
+  left: 20px;
+  position: absolute;
+  opacity: 100%;
+  color: white;
+  transition: all 2s ease;
+}
+
+
+button {
+  padding: 1rem 2rem;
+
+}
